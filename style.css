@@ -1,0 +1,336 @@
+/* SMOOTH  SCROLLING  */
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+/*CSS Reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*CSS Variables*/
+
+:root {
+    --navbar-height : 60px;
+}
+
+/*Navigation Bar*/
+#navbar {
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+    position: sticky;
+    top: 0px;
+}
+
+/*Logo and image*/
+
+#logo{
+    height: 21px;
+    margin: 23px 33px;
+}
+
+#logo img{
+    height: 64px;
+    margin: -90px -9px;
+    border-radius: 50%
+}
+
+
+/*List Styling*/
+
+#navbar ul
+{
+    display: flex;
+    font-family: serif;
+    /* font-style: italic; */
+    font-weight: bold;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(250, 207, 246);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.4rem;
+
+}
+
+/*Padding*/
+
+#navbar ul li a {
+    color: black;
+    display: block;
+    padding: 6px 20px;
+    border-radius: 80px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+
+
+
+/* Styleing for HOMe section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 4px 200px;
+    height: 547px;
+    justify-content:center;
+    align-items: center;
+}
+
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('./Website_Img/nursery_bg.webp') no-repeat center center/cover;
+    height: 97%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -2;
+    opacity: 2.9;
+}
+
+
+
+/* Lets style for "HOME" using its class name primary */
+
+#home h1{
+    color: white;
+    text-align: center;
+}
+
+#home p{
+    font-size: 2.5rem;
+    font-family: "Sofia", sans-serif; 
+    color: white;
+}
+
+
+
+/* Lets style for "PRODUCT" using its class name primary */
+
+#product {
+    margin: 13px;
+    display: flex;
+}
+
+#product .box{
+    border: 5px solid #a621c7;
+    padding: 25px;
+    margin: 20px 18px;
+    border-radius: 20px;
+    background-color: #e5dde1;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#product .box img{
+    height: 211px;
+    margin: auto;
+    display: block;
+}
+
+
+
+
+
+
+/* Lets add style for CLient section */
+
+#client-section{
+    height: 400px;
+    position: relative;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url("./Website_Img/nursery.jpeg") no-repeat center center/cover;
+    height: 440px;
+    width: 100%;
+    z-index: -1;
+    opacity: .6;
+    margin: -5px 0px;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 25px 25px;
+}
+
+#clients img{
+    height: 100px;
+    width: 100px;
+    padding: 22px 13px;
+    /* width: 50px; */
+}
+
+
+
+
+
+
+
+/* Contact Us Section */
+
+
+#contact{
+    position: relative;
+    height: 545px;
+}
+
+
+.contact-primary{ 
+    font-size: 5rem;
+    color: black;
+    font-family: "Sofia", sans-serif;
+    text-shadow: 3px 5px rgb(243, 168, 168);
+    text-align: center;
+    padding: 33px 50px;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url("./Website_Img/contact.jpg") no-repeat center center/cover;
+    height: 520px;
+    width: 100%;
+    z-index: -1;
+    opacity: .6;
+    margin: 30px 0px;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6px;
+}
+
+
+#contact-box form{
+    width: 35%;
+} 
+
+#contact-box label{
+    font-size: 1.5rem;
+    color: black;
+}
+
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 20px;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+/* Footer section */
+
+footer{
+    background-color: black;
+    color: white;
+    /* content: center; */
+    /* margin: 20px 30px; */
+    padding: 5px 00px;
+}
+
+/* Lets style for "H1" using its class name primary */
+
+
+.h-primary{
+    margin: 53px 35px;
+    font-size: 6rem;
+    color: white;
+    /* padding: 20px; */
+    font-family:'Times New Roman', Times, serif;
+    /* font-family: "Sofia", sans-serif; */
+}
+
+#h-four{
+    color: white;
+    /* font-family: cursive; */
+    font-size: 2.5rem;
+}
+
+
+#s1{
+    font-size: 7rem;
+    font-family: "Sofia", sans-serif;
+    text-shadow: 3px 3px rgb(218, 218, 213);
+    color: rgb(24, 172, 44);
+    font-weight: bold;
+}
+
+
+.h-primary1{ 
+    font-size: 5rem;
+    color: black;
+    font-family: "Sofia", sans-serif;
+    text-shadow: 3px 5px rgb(243, 168, 168);
+    text-align: center;
+    padding: 28px 50px;
+}
+
+.h-secondary{
+    font-size: 3rem;
+    padding: 20px;
+    color: black;
+    font-style: normal;
+}
+
+
+.h-secondary center:hover{
+    color: black;
+    background-color: rgb(223, 50, 50);
+}
+
+
+#btn{
+    padding: 10px 30px;
+    /* border: 5px solid white; */
+    background-color: aquamarine;
+    color: black;
+    border-radius: 30px ;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin: 60px;
+}
+
+.center{
+    text-align: center;
+}
